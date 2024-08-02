@@ -1,0 +1,25 @@
+{
+  "name": "taskalert_notif",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "devstart":"nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pusher/push-notifications-web": "^1.1.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pusher": "^5.2.0",
+    "pusher-js": "^8.4.0-rc2",
+    "web-push": "^3.6.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

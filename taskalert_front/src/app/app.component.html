@@ -1,0 +1,295 @@
+<!-- <div class="container">
+  <div class="jumbotron text-center">
+    <h1 class="display-4">Task Alert Live!</h1>
+    <p class="lead">Use our solution to stay productive with an eye on your day to day errands.</p>
+    <hr>
+    <p>The server is responding : {{ server_status }}  ... </p>
+  </div>
+</div> -->
+
+<!-- Template Html -->
+<div class="page-wrapper chiller-theme toggled">
+  <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar" class="sidebar-wrapper">
+    <div class="sidebar-content">
+      <div class="sidebar-menu">
+        <ul>
+          <li class="header-menu">
+            <span>General</span>
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="fa fa-tachometer-alt"></i>
+              <span>Dashboard</span>
+              <span class="badge badge-pill badge-warning">New</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a href="#">Dashboard 1
+                    <span class="badge badge-pill badge-success">Pro</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Dashboard 2</a>
+                </li>
+                <li>
+                  <a href="#">Dashboard 3</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="fa fa-shopping-cart"></i>
+              <span>E-commerce</span>
+              <span class="badge badge-pill badge-danger">3</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a href="#">Products
+
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Orders</a>
+                </li>
+                <li>
+                  <a href="#">Credit cart</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="far fa-gem"></i>
+              <span>Components</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a href="#">General</a>
+                </li>
+                <li>
+                  <a href="#">Panels</a>
+                </li>
+                <li>
+                  <a href="#">Tables</a>
+                </li>
+                <li>
+                  <a href="#">Icons</a>
+                </li>
+                <li>
+                  <a href="#">Forms</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="fa fa-chart-line"></i>
+              <span>Charts</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a href="#">Pie chart</a>
+                </li>
+                <li>
+                  <a href="#">Line chart</a>
+                </li>
+                <li>
+                  <a href="#">Bar chart</a>
+                </li>
+                <li>
+                  <a href="#">Histogram</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="fa fa-globe"></i>
+              <span>Maps</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a href="#">Google maps</a>
+                </li>
+                <li>
+                  <a href="#">Open street map</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header-menu">
+            <span>Extra</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-book"></i>
+              <span>Documentation</span>
+              <span class="badge badge-pill badge-primary">Beta</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-calendar"></i>
+              <span>Calendar</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-folder"></i>
+              <span>Examples</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+  </nav>
+
+  <main class="page-content">
+    <div class="d-flex flex-column" style="height:98vh;">
+      <!-- Top bar: searchbox and plus -->
+      <div class="border flex-full-center" style="height: 60px;">
+        <div class="d-flex flex-row">
+          <div class="input-group" style="margin-right: 15px;">
+            <input type="text" class="form-control search-menu" placeholder="Search an running task ..." style="width:500px;height:40px;border-radius:0px;">
+          </div>
+          <div class="flex-full-center" style="height:40px;">
+            <button class="no-border" type="button" data-toggle="modal" data-target="#exampleModal" style="background-color: transparent;">
+              <i class="fas fa-plus" style="font-size: 25px;"></i>
+            </button>
+          </div>
+        </div>
+      </div>   
+
+      <!-- Middle list of task  -->
+      <div class="border" style="flex-grow: 1;">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">A new Task for you!</h5>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Quaerat, sunt explicabo porro voluptas quibusdam sed vel
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">A new Task for you!</h5>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Learning about kubernetes</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Learn about infrastructure as code</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Dont miss this week on bookingo</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3" data-toggle="modal" data-target="#exampleModal2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">A new Task for you!</h5>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Quaerat, sunt explicabo porro voluptas quibusdam sed vel 
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">A new Task for you!</h5>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">take out the trash</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">dont forget the dishes</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Taskalert separate the code in different component</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Taskalert make the navigation works</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">A new Task for you!</h5>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Quaerat, sunt explicabo porro voluptas quibusdam sed vel 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- new task modal -->
+  <div id="exampleModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">A new task for you</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group" style="margin-bottom: 10px;">
+            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Title of the task" style="height:40px;">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- display task modal -->
+  <div id="exampleModal2" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">A new task for you</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Doloremque quasi eaque iusto ipsa nisi nostrum nihil numquam 
+            ex ipsam provident. Enim suscipit, 
+            sit iure eum quis modi quasi sapiente id ab repellat ducimus 
+            nulla cum voluptates pariatur iste qui harum!.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

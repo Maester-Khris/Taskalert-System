@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  client: 
+    hostname: localhost
+    build:
+      context: ./taskalert_front
+      dockerfile: Dockerfile
+    ports: 
+      - '8002:80'
+  api:
+    build: 
+      context: ./taskalert_api
+      dockerfile: Dockerfile
+    ports:
+      - '8001:8001'

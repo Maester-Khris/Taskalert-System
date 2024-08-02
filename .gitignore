@@ -1,0 +1,21 @@
+**/node_modules
+
+# Optionally, ignore log files
+*.log
+
+# Ignore any build output
+**/build
+
+# Ignore any coverage reports
+**/coverage
+
+# Ignore .env files containing sensitive information
+**/.env
+
+# Ignore any OS or IDE-generated files
+.DS_Store
+Thumbs.db
+.idea
+
+# Ignore any npm debug logs
+npm-debug.log
